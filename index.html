@@ -20,11 +20,11 @@
 
             <h3>{{loggin.usuario}}</h3>
 
-            <input v-model="inputName" type="text" placeholder="Ingrese el usuario">
+            <input v-model="inputName" type="text" placeholder="Ingrese el usuario" required>
 
             <h3>{{loggin.contrasena}}</h3>
 
-            <input v-model="inputPass" type="password" placeholder="Ingrese contraseña">
+            <input v-model="inputPass" type="password" placeholder="Ingrese contraseña" required>
 
             <button @click="btnIniciarSesion">{{loggin.boton}}</button>
 
