@@ -7,13 +7,30 @@
     <title>Sistema Vue</title>
 
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-
+    <script src="https://unpkg.com/vue@next"></script>
 </head>
 
 
 <body>
     
+    <div id ="app" class="app">
+        
+        <div>
+            <h1>{{loggin.mensaje}}</h1>
+
+            <p>{{loggin.usuario}}</p>
+
+            <input type="text">
+
+            <p>{{loggin.contrasena}}</p>
+
+            <input type="password">
+
+            <button>{{loggin.boton}}</button>
+            
+        </div>
+
+    </div>
 
 
     <script src="./js/main.js"></script>

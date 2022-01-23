@@ -1,1 +1,1 @@
-const mountApp = app.mount("#app");
+const mountApp = app.mount("#app")
