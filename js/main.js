@@ -5,7 +5,7 @@ const app = Vue.createApp({
             loggin:{
                 mensaje: "INICIO SESION",
                 usuario: "Usuario",
-                contrasena: "Contrasena",
+                contrasena: "Contraseña",
                 boton: "Iniciar Sesion",
             }
             
