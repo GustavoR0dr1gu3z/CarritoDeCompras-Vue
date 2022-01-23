@@ -14,11 +14,18 @@ html, body{
     margin: auto;
     margin-top: 5rem;
     padding: 10px;
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
 }
 
 .app > div >h1{
     text-align: center;
     font-size: 1.4rem;    
     margin-bottom: 1.5rem;
+    font-family: monospace;
+}
+
+.app > div > h3{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
 }
