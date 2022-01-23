@@ -6,7 +6,7 @@ const app = Vue.createApp({
                 mensaje: "INICIO SESION",
                 usuario: "Usuario",
                 contrasena: "Contraseña",
-                boton: "Iniciar Sesion",
+                boton: "INICIO",
             }
             
         }

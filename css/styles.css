@@ -15,7 +15,7 @@ html, body{
     margin: auto;
     margin-top: 3rem;
     padding: 10px;
-    padding-bottom: 8rem;
+    padding-bottom: 4.5rem;
 }
 
 .app > div >h1{
@@ -43,5 +43,22 @@ html, body{
     font-size: 1.2rem;
     font-family: monospace;
     margin-left: 1rem;
+}
 
+.app > div > button{
+    width: 50%;
+    font-size: 1.2rem;
+    font-family: monospace bold;    
+    margin: auto;
+    margin-top: 2rem;
+    color: white;
+    background-color: black;
+    padding: 15px;
+}
+
+
+.app > div > button:hover{
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
 }
