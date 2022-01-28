@@ -29,7 +29,8 @@ const app = Vue.createApp({
 
     methods:{
         btnIniciarSesion(){
-            //const peticion = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos");                
+            //const peticion = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos");        
+            console.log("hola");        
             axios({
                 method: 'post',
                 url: 'http://prueba.pwstasp.net/api/conexion_login/login',
@@ -44,11 +45,6 @@ const app = Vue.createApp({
                 console.log(respuesta);
 
                     console.log("entro");
-                    //console.log(respuesta.data.mensaje);
-                    //localStorage.setItem("usuario", respuesta.data.usuario);
-                    //localStorage.setItem("id", respuesta.data.id);
-                    //window.location.href = "index.html";
-                    //alert("entro");
 
                 
             }).catch( error => {
