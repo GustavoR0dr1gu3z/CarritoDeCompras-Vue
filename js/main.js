@@ -26,7 +26,7 @@ const app = Vue.createApp({
                 contrasenia: this.loggin.inputPass
             });                
 
-            console.log(peticion);
+            
 
         },
     }
