@@ -30,8 +30,9 @@
     <!--Imagen en centro cuando inicie el PWA-->
     <link rel="apple-touch-startup-image" href="./img/icono16px.png">    
 
-<!--MANIFEST-->
+<!--MANIFEST
     <link rel="manifest" href="./manifest.json">
+-->
 
 <!--CSS-->
     <link rel="stylesheet" href="./css/styles.css">
@@ -49,7 +50,7 @@
     
     <div id ="app" class="app">
         
-        <form>
+        <form v-on:submit="btnIniciarSesion">
 
             <h1>{{loggin.mensaje}}</h1>
 
@@ -61,12 +62,18 @@
 
             <input v-model="inputPass" type="password" placeholder="Ingrese contraseña" required>
 
-            <button @click="btnIniciarSesion">{{loggin.boton}}</button>
+            <!-- <button @click="btnIniciarSesion">{{loggin.boton}}</button> -->
+            <input type="submit" value="Iniciarsss" class="inputbtn">
 
         </form>
 
+
+
     </div>
     
+    <script>
+        console.log("hola desde el index");
+    </script> 
     
     <script src="./js/main.js"></script>
     <script src="./js/mount.js"></script>

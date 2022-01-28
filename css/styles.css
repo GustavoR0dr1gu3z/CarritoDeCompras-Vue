@@ -45,19 +45,20 @@ html, body{
     margin-left: 1rem;
 }
 
-.app > form > button{
+.app > form > .inputbtn{
     width: 50%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: monospace bold;    
     margin: auto;
     margin-top: 2rem;
     color: white;
     background-color: black;
     padding: 15px;
+    padding-top: 6px;
 }
 
 
-.app > form > button:hover{
+.app > form > .inputbtn:hover{
     background-color: #eee;
     color: black;
     cursor: pointer;

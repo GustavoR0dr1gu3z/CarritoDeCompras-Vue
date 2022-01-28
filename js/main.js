@@ -28,7 +28,7 @@ const app = Vue.createApp({
     },
 
     methods:{
-        btnIniciarSesion(){
+     /*   btnIniciarSesion(){
             //const peticion = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos");        
             console.log("hola");        
             axios({
@@ -50,12 +50,14 @@ const app = Vue.createApp({
             }).catch( error => {
                 console.log("no entro");
                 alert("Usuario o contraseña incorrectos");
-            })
+            })                                
+        },*/
 
-            
-            
-            
-        },
+        btnIniciarSesion(e){
+            e.preventDefault();
+            console.log("hola desde el main");
+        }
+
     }
 
 });
