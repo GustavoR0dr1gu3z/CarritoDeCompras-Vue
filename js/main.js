@@ -8,8 +8,8 @@ const app = Vue.createApp({
                 usuario: "Usuario",
                 contrasena: "Contraseña",
                 boton: "INICIO",
-                inputName: "",
-                inputPass: "",
+                inputName: "1",
+                inputPass: "1",
             }
             
         };
@@ -21,11 +21,13 @@ const app = Vue.createApp({
 
     methods:{
         async btnIniciarSesion(){
-            const data = await axios.post("http://prueba.pwstasp.net/api/conexion_login/login",{
+            const peticion = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos",{
                 usuario: this.loggin.inputName,
                 contrasenia: this.loggin.inputPass
             });                
-            console.log(data);
+
+            console.log(peticion);
+
         },
     }
 
