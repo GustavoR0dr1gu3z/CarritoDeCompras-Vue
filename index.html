@@ -43,6 +43,8 @@
 <!--AXIOS CDN-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"></script>
 
+        
+
 </head>
 
 
@@ -50,7 +52,7 @@
     
     <div id ="app" class="app">
         
-        <form v-on:submit="btnIniciarSesion2" href="productos.html">
+        <form v-on:submit="btnIniciarSesion2">
 
             <h1>{{loggin.mensaje}}</h1>
 
@@ -63,10 +65,9 @@
             <input v-model="inputPass" type="password" placeholder="Ingrese contraseña" required>
             
             <input type="submit" value="Iniciar" class="inputbtn">
-
+            
         </form>
-
-
+<!-- COMO LA ETIQUETA A, PARA LOS ENLACES-->
 
     </div>
     
@@ -77,8 +78,8 @@
         }else{
             console.log("No hay usuario");
         }
-    </script> 
-    
+    </script>
+
     <script src="./js/main.js"></script>
     <script src="./js/mount.js"></script>
 

@@ -56,18 +56,26 @@
         </div>
 
         <div class="sesionB">
-            <img src="./img/user.png" alt="">
-            <p>{{productos.username}}</p>
-            <button>{{productos.cSesion}}</button>
+
+            <form v-on:submit="btnCerrarSesion">
+                
+                <img src="./img/user.png" alt="">
+
+                <p>{{productos.username}}</p>
+
+                <input type="submit" value="Cerrar Sesion" class="btnC">
+                
+            </form>
+            
         </div>
 
-        <div>
-            <form v-on:submit="btnCerrarSesion" href="index.html">
-                <input type="text" placeholder="Buscar producto">
+        <div>            
+            
+                <input type="text" placeholder="Buscar producto">                
                 <button type="submit">
-                    <img src="./img/search.svg" alt="">
+                <img src="./img/search.svg" alt="">
                 </button>
-            </form>            
+            
         </div>
         
 

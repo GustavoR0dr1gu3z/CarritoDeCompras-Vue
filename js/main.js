@@ -47,7 +47,5 @@ const app = Vue.createApp({
             localStorage.removeItem("usuario");
         }
 
-
     }
-
 });
