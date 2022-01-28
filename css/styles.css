@@ -2,7 +2,7 @@ html, body{
     background-color: #eee;
 }
 
-.app > div{
+.app > form{
     width: 30%;
     height: 30%;
     display: flex;
@@ -18,14 +18,14 @@ html, body{
     padding-bottom: 4.5rem;
 }
 
-.app > div >h1{
+.app > form >h1{
     text-align: center;
     font-size: 1.4rem;    
     margin-bottom: 1.5rem;
     font-family: monospace;    
 }
 
-.app > div > h3{
+.app > form > h3{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     font-family: monospace;
@@ -34,7 +34,7 @@ html, body{
     margin-top: 2rem;
 }
 
-.app > div > input{
+.app > form > input{
     width: 80%;
     height: 2rem;
     border-radius: 5px;
@@ -45,7 +45,7 @@ html, body{
     margin-left: 1rem;
 }
 
-.app > div > button{
+.app > form > button{
     width: 50%;
     font-size: 1.2rem;
     font-family: monospace bold;    
@@ -57,7 +57,7 @@ html, body{
 }
 
 
-.app > div > button:hover{
+.app > form > button:hover{
     background-color: #eee;
     color: black;
     cursor: pointer;
