@@ -15,7 +15,7 @@ const app = Vue.createApp({
             productos:{
                 mensaje: "PRODUCTOS",
                 signo: ">",
-                username: "Nombre",
+                username: localStorage.getItem('usuario'),
                 cSesion: "Cerrar Sesion",
 
             }
@@ -23,39 +23,23 @@ const app = Vue.createApp({
         };
     },
     
-    created(){
-        //this.btnIniciarSesion();
-    },
 
     methods:{
-     /*   btnIniciarSesion(){
-            //const peticion = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos");        
-            console.log("hola");        
-            axios({
-                method: 'post',
-                url: 'http://prueba.pwstasp.net/api/conexion_login/login',
-                headers: {                    
-                },
-                data: {
-                    usuario: this.inputName,
-                    contrasenia: this.inputPass
-                }
-            })
-            .then (respuesta => {
-                console.log(respuesta);
 
-                    console.log("entro");
-
-                
-            }).catch( error => {
-                console.log("no entro");
-                alert("Usuario o contraseña incorrectos");
-            })                                
-        },*/
-
-        btnIniciarSesion(e){
+        async btnIniciarSesion2(e){
             e.preventDefault();
-            console.log("hola desde el main");
+
+            let resultado = await axios.post("http://prueba.pwstasp.net/api/conexion_login/login", {
+                usuario: this.inputName,
+                contrasenia: this.inputPass
+            });
+
+            if(resultado.data.exito == true){
+                console.log("entro con async await");
+                localStorage.setItem("usuario", this.inputName);
+            }else{
+                console.log("no entro con async await");
+            }
         }
 
     }
