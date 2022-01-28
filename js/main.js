@@ -40,7 +40,13 @@ const app = Vue.createApp({
             }else{
                 console.log("no entro con async await");
             }
+        },
+
+        btnCerrarSesion(e){
+            e.preventDefault();
+            localStorage.removeItem("usuario");
         }
+
 
     }
 
