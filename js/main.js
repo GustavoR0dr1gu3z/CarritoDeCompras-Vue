@@ -10,6 +10,12 @@ const app = Vue.createApp({
                 boton: "INICIO",
                 inputName: "",
                 inputPass: "",
+            },
+
+            productos:{
+                mensaje: "PRODUCTOS",
+                signo: ">",
+
             }
             
         };
@@ -40,7 +46,7 @@ const app = Vue.createApp({
                     //localStorage.setItem("usuario", respuesta.data.usuario);
                     //localStorage.setItem("id", respuesta.data.id);
                     //window.location.href = "index.html";
-                    
+                    //alert("entro");
 
                 
             }).catch( error => {

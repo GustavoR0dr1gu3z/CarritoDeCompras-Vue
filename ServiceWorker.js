@@ -11,6 +11,7 @@ const urlsToCache = [
     './img/icono512px.png',
     './img/icono1024px.png',
     './index.html',
+    './productos.html',
     './js/main.js',
     './js/mount.js',
     './css/style.css',
