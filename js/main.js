@@ -5,11 +5,11 @@ const app = Vue.createApp({
         return{
             loggin:{
                 mensaje: "INICIO SESION",
-                usuario: "Usuario",
+                usuarioo: "Usuario",
                 contrasena: "Contraseña",
                 boton: "INICIO",
-                inputName: "1",
-                inputPass: "1",
+                inputName: "",
+                inputPass: "",
             }
             
         };
@@ -20,14 +20,37 @@ const app = Vue.createApp({
     },
 
     methods:{
-        async btnIniciarSesion(){
-            const peticion = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos",{
-                usuario: this.loggin.inputName,
-                contrasenia: this.loggin.inputPass
-            });                
+        btnIniciarSesion(){
+            //const peticion = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos");                
+            axios({
+                method: 'post',
+                url: 'http://prueba.pwstasp.net/api/conexion_login/login',
+                headers: {                    
+                },
+                data: {
+                    usuario: this.inputName,
+                    contrasenia: this.inputPass
+                }
+            })
+            .then (respuesta => {
+                console.log(respuesta);
+
+                    console.log("entro");
+                    //console.log(respuesta.data.mensaje);
+                    //localStorage.setItem("usuario", respuesta.data.usuario);
+                    //localStorage.setItem("id", respuesta.data.id);
+                    //window.location.href = "index.html";
+                    
+
+                
+            }).catch( error => {
+                console.log("no entro");
+                alert("Usuario o contraseña incorrectos");
+            })
 
             
-
+            
+            
         },
     }
 
