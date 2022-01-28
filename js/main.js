@@ -15,6 +15,8 @@ const app = Vue.createApp({
             productos:{
                 mensaje: "PRODUCTOS",
                 signo: ">",
+                username: "Nombre",
+                cSesion: "Cerrar Sesion",
 
             }
             

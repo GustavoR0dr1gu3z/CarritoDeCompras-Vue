@@ -42,6 +42,7 @@
 <!--AXIOS CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -54,6 +55,18 @@
             <a href="productos.html">Productos</a>
         </div>
 
+        <div class="sesionB">
+            <img src="./img/user.png" alt="">
+            <p>{{productos.username}}</p>
+            <button>{{productos.cSesion}}</button>
+        </div>
+
+        <div>
+            <input type="text" placeholder="Buscar producto">
+            <button type="submit">
+                <img src="./img/search.svg" alt="">
+            </button>
+        </div>
         
 
     </div>
