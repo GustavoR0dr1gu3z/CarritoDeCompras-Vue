@@ -16,6 +16,7 @@ const app = Vue.createApp({
                 signo: ">",
                 username: localStorage.getItem('usuario'),
                 cSesion: "Cerrar Sesion",
+                datos: []
 
             }
             
@@ -44,7 +45,19 @@ const app = Vue.createApp({
         btnCerrarSesion(e){
             e.preventDefault();
             localStorage.removeItem("usuario");
+        },
+
+        async btnSearch(){
+            let res = await axios.post("http://prueba.pwstasp.net/api/conexion_login/productos", {});
+            datos = res.data.datos
+            for(i=0; i<datos.length; i++){
+                this.productos.datos.push(datos[i]);
+            }            
         }
 
+    },
+
+    created(){
+        this.btnSearch();
     }
 });

@@ -72,6 +72,18 @@
 
         </div>
 
+        <div>
+            <ul>
+                <li v-for="(codigo_producto, descripcion, favorito, imagen, nombre_producto, precio) in productos.datos" :key=codigo_producto>
+                    {{codigo_producto}}
+                    {{descripcion}}
+                    {{favorito}}
+                    {{imagen}}
+                    {{nombre_producto}}
+                    {{precio}}
+                </li>
+            </ul>
+        </div>
 
         
     </div>
