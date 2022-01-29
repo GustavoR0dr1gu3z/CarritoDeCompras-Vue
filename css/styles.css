@@ -144,3 +144,12 @@ html, body{
     margin-top: 1.3rem;
     margin-bottom: 0;
 }
+
+.cartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.3rem;
+    
+}

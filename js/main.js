@@ -16,7 +16,7 @@ const app = Vue.createApp({
                 signo: ">",
                 username: localStorage.getItem('usuario'),
                 cSesion: "Cerrar Sesion",
-                datos: []
+                datos: [],
 
             }
             
@@ -52,7 +52,8 @@ const app = Vue.createApp({
             datos = res.data.datos
             for(i=0; i<datos.length; i++){
                 this.productos.datos.push(datos[i]);
-            }            
+            }
+            console.log(datos);            
         }
 
     },
