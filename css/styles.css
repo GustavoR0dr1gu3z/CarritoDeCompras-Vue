@@ -127,8 +127,20 @@ html, body{
 }
 
 .imgS{
-    margin-right: 40rem;
+    margin-right: 3rem;
     width: 2%;
     height: 2%;
     margin-top: 1.3rem;    
+}
+
+.imgCon{
+    width: 2%;
+    margin-top: 1.3rem;
+}
+
+.contador{    
+    padding: 0;
+    margin-right: 20rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0;
 }
