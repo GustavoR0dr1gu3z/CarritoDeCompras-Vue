@@ -72,8 +72,8 @@ html, body{
     background-color: #eee;    
     box-shadow: 1px 1px 3px rgb(42, 47, 48);
     margin: auto;    
-    padding-bottom: .8rem;
-    padding-right: .8rem;
+    padding-bottom: .4rem;
+    padding-right: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -82,16 +82,19 @@ html, body{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 .btnC{
-    font-size: .8rem;
+    font-size: .7rem;
     border-radius: .2rem;
     font-family: monospace bold;    
     margin: auto;
     color: white;
     background-color: black;
-    padding: .4rem;
+    padding: .3rem;
+    margin-bottom: 0.5rem;
+
 }
 
 .dire{
@@ -105,7 +108,7 @@ html, body{
     font-family: monospace;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
-    margin-top: 0.8rem;
+    margin-top: 0.1rem;
 }
 
 .dire > p{
@@ -113,5 +116,5 @@ html, body{
     font-family: monospace;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    top: 0;
+    margin-top: 0.1rem;
 }
