@@ -57,21 +57,21 @@
         <div class="sesionB">
             <form v-on:submit="btnCerrarSesion">     
                 <div>
+                    <input type="text" placeholder="Buscar producto" class="buttonSearch">                
+                    <img src="../img/search.svg" class="imgS">
+
+                    
                     <img src="../img/user.png" alt="">
-                    <p>{{productos.username}}</p>                
+                    <p class="usernamee">{{productos.username}}</p>                
+                    
                 </div>                           
                 <input type="submit" value="Cerrar Sesion" class="btnC" >                
             </form>            
+
         </div>
 
-        <div>                        
-            <input type="text" placeholder="Buscar producto">                
-            <button type="submit">
-            <img src="../img/search.svg" alt="">
-            </button>            
-        </div>
+
         
-
     </div>
 
 

@@ -65,36 +65,32 @@ html, body{
 }
 
 .sesionB{
-    display: flex;
-    align-items: flex-end;
-    justify-content:right;
     border-radius: 10px;
     background-color: #eee;    
     box-shadow: 1px 1px 3px rgb(42, 47, 48);
-    margin: auto;    
-    padding-bottom: .4rem;
-    padding-right: 1rem;
-    margin-bottom: 1rem;
+    padding-right: 1rem;    
 }
 
 .sesionB > form > div{    
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    
+    align-items: center;
+        
+}
+
+.usernamee{
+    margin-left: 1rem;
 }
 
 .btnC{
     font-size: .7rem;
     border-radius: .2rem;
-    font-family: monospace bold;    
-    margin: auto;
+    font-family: monospace bold;        
     color: white;
     background-color: black;
     padding: .3rem;
     margin-bottom: 0.5rem;
-
+    margin-left: 78.5rem;
 }
 
 .dire{
@@ -117,4 +113,22 @@ html, body{
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     margin-top: 0.1rem;
+}
+
+.buttonSearch{    
+    width: 50%;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid gray;    
+    font-size: .8rem;
+    font-family: monospace;
+    margin-left: 1rem;
+    margin-top: 1.3rem;
+}
+
+.imgS{
+    margin-right: 40rem;
+    width: 2%;
+    height: 2%;
+    margin-top: 1.3rem;    
 }
