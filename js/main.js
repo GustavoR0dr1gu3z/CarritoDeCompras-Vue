@@ -17,8 +17,8 @@ const app = Vue.createApp({
                 username: localStorage.getItem('usuario'),
                 cSesion: "Cerrar Sesion",
                 datos: [],
-
-            }
+                counts: 0,
+            },
             
         };
     },
@@ -54,11 +54,27 @@ const app = Vue.createApp({
                 this.productos.datos.push(datos[i]);
             }
             console.log(datos);            
-        }
+        },
+
+
+        modCount(instruccion = "add", limit = 10){
+            if(instruccion == "dis" && this.productos.counts > 0){
+                this.productos.counts -= 1;
+                //console.log(typeof(this.productos.counts));
+            }else{
+                this.productos.counts += 1;
+                //console.log(typeof(this.productos.counts));
+                //console.log(this.productos.counts);
+            }
+
+        },
 
     },
 
     created(){
         this.btnSearch();
     }
+
+
+
 });
