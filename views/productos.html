@@ -24,17 +24,17 @@
     <title>Productos</title>
 
 <!--ICONOS-->
-<link rel="shortcut icon" href="./img/icono16px.png" type="image/png">
-<link rel="apple-touch-icon" href="./img/icono16px.png">
+<link rel="shortcut icon" href="../img/icono16px.png" type="image/png">
+<link rel="apple-touch-icon" href="../img/icono16px.png">
 
 <!--Imagen en centro cuando inicie el PWA-->
-<link rel="apple-touch-startup-image" href="./img/icono16px.png">    
+<link rel="apple-touch-startup-image" href="../img/icono16px.png">    
 
 <!--MANIFEST-->
-<link rel="manifest" href="./manifest.json">
+<link rel="manifest" href="../manifest.json">
 
 <!--CSS-->
-<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="../css/styles.css">
 
 <!--VUE CDN-->
 <script src="https://unpkg.com/vue@next"></script>
@@ -42,7 +42,6 @@
 <!--AXIOS CDN-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.25.0/axios.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
 
 </head>
 <body>
@@ -50,40 +49,34 @@
     <div id="app">
 
         <div class="dire">
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
             <p>{{productos.signo}}</p>
             <a href="productos.html">Productos</a>
         </div>
 
         <div class="sesionB">
-
-            <form v-on:submit="btnCerrarSesion">
-                
-                <img src="./img/user.png" alt="">
-
-                <p>{{productos.username}}</p>
-
-                <input type="submit" value="Cerrar Sesion" class="btnC">
-                
-            </form>
-            
+            <form v-on:submit="btnCerrarSesion">     
+                <div>
+                    <img src="../img/user.png" alt="">
+                    <p>{{productos.username}}</p>                
+                </div>                           
+                <input type="submit" value="Cerrar Sesion" class="btnC" >                
+            </form>            
         </div>
 
-        <div>            
-            
-                <input type="text" placeholder="Buscar producto">                
-                <button type="submit">
-                <img src="./img/search.svg" alt="">
-                </button>
-            
+        <div>                        
+            <input type="text" placeholder="Buscar producto">                
+            <button type="submit">
+            <img src="../img/search.svg" alt="">
+            </button>            
         </div>
         
 
     </div>
 
 
-   <!-- <script src="load.js"></script> -->
-    <script src="./js/main.js"></script>
-    <script src="./js/mount.js"></script>    
+
+    <script src="../js/main.js"></script>
+    <script src="../js/mount.js"></script>    
 </body>
 </html>

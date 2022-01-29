@@ -69,13 +69,20 @@ html, body{
     align-items: flex-end;
     justify-content:right;
     border-radius: 10px;
-    background-color: #eee;
-    border: 2px rgb(54, 68, 68);
-
-    
+    background-color: #eee;    
+    box-shadow: 1px 1px 3px rgb(42, 47, 48);
+    margin: auto;    
+    padding-bottom: .8rem;
+    padding-right: .8rem;
+    margin-bottom: 1rem;
 }
 
-
+.sesionB > form > div{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .dire{
     display: flex;    
