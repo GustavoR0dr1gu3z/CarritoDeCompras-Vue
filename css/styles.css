@@ -148,8 +148,44 @@ html, body{
 .cartas{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;    
+    margin-top: 1.5rem;    
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    
+    text-align: center;
+}
+
+.card-text{
+
+    text-align: center;
+    width: 10rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.buttonAQ{
+    
+    display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
     
+}
+
+.precios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.card-img-top{
+    width: 10rem;
+    height: 10rem;
 }
