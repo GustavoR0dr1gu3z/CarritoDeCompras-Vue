@@ -43,9 +43,8 @@ const app = Vue.createApp({
 
                 if( us === this.inputName){
                     window.location.href = "../views/productos.html";
-                    console.log("listo")
+                    console.log("Iniciando Sesion")
                 }else{
-                    console.log("no hay pex");
                     console.log(this.inputName);        
                 }
 
@@ -62,9 +61,8 @@ const app = Vue.createApp({
 
             if( us == null){
                 window.location.href = "../index.html";
-                console.log("listo")
+                console.log("Cerrando Sesion")
             }else{
-                console.log("no hay pex");
                 console.log(us);        
             }
 
