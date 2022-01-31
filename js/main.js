@@ -19,6 +19,11 @@ const app = Vue.createApp({
                 datos: [],
                 counts: 0,
             },
+
+            hipervinculo: {
+                loginn : "../index.html",
+                productos: "../productos.html",
+            }
             
         };
     },
