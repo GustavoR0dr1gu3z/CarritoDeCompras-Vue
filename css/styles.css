@@ -316,3 +316,11 @@ html, body{
 .enlaces > ul > li:hover > a{
     color: black;
 }
+
+.seleccionar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
