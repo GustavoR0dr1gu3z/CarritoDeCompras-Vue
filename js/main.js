@@ -43,6 +43,17 @@ const app = Vue.createApp({
             if(resultado.data.exito == true){
                 console.log("entro con async await");
                 localStorage.setItem("usuario", this.inputName);
+
+                us = localStorage.getItem('usuario');
+
+                if( us === this.inputName){
+                    window.location.href = "../views/productos.html";
+                    console.log("listo")
+                }else{
+                    console.log("no hay pex");
+                    console.log(this.inputName);        
+                }
+
             }else{
                 console.log("no entro con async await");
                 alert(resultado.data.error)
