@@ -39,17 +39,29 @@ const app = Vue.createApp({
                 contrasenia: this.inputPass
             });
 
+
             if(resultado.data.exito == true){
                 console.log("entro con async await");
                 localStorage.setItem("usuario", this.inputName);
             }else{
                 console.log("no entro con async await");
+                alert(resultado.data.error)
             }
         },
 
         btnCerrarSesion(e){
             e.preventDefault();
             localStorage.removeItem("usuario");
+            us = localStorage.getItem('usuario');
+
+            if( us == null){
+                window.location.href = "../index.html";
+                console.log("listo")
+            }else{
+                console.log("no hay pex");
+                console.log(us);        
+            }
+
         },
 
         async btnSearch(){
