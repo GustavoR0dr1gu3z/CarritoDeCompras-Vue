@@ -69,15 +69,23 @@
 
             <div class="productosP">
                 <div class="fotoProducto">
-
+                    <img class="card-img-top" src="../img/icono256px.png" alt="Card image cap">
                 </div>
                 <div class="infoP">
-                    <h3>
+                    <h2>
                         {{productos.datos[0].nombre_producto}}
-                    </h3>
-                    <h5>
+                    </h2>
+                    <h4>
                         ${{productos.datos[0].precio}}.00
-                    </h5>
+                    </h4>
+                    <div class="productCount">
+                        <button @click="modCount('',1)"  class="btn btn-primary">+</button>                        
+                        <h3>{{productos.counts}}</h3>
+                        <button v-on:click="modCount('dis',1)" class="btn btn-primary">-</button>
+                    </div>
+                </div>
+                <div class="btnQuitarP">
+                    <button v-on:click="btnAgregarCarrito" class="quitarP">QUITAR</button>                    
                 </div>
             </div>
 

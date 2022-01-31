@@ -58,7 +58,7 @@ html, body{
 }
 
 
-.app > form > .inputbtn:hover, .btnC:hover{
+.app > form > .inputbtn:hover, .btnC:hover, .quitarP:hover{
     background-color: #eee;
     color: black;
     cursor: pointer;
@@ -237,12 +237,48 @@ html, body{
 }
 
 .infoP{
-    background-color: black;
-    color: white;
-    font-size: .8rem;
     font-family: monospace;
-    padding: .3rem;
+    font-size: .75rem;    
     border-radius: 5px;
-    box-shadow: 2px 2px 20px rgb(142, 174, 180);
+    align-items: left;
+}
 
+.productosP{
+    box-shadow: 1px 1px 3px rgb(42, 47, 48);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+    margin-right: 60rem;
+}
+
+.fotoProducto{
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;  
+    
+}
+
+.productCount{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.productCount > h3{
+    padding: 0.2rem;
+}
+
+.btnQuitarP{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.3rem;
+}
+
+.btnQuitarP > button{
+    color: white;
+    background-color: black;
 }
