@@ -73,8 +73,6 @@ const app = Vue.createApp({
 
     created(){
         this.btnSearch();
-    }
-
-
+    },
 
 });

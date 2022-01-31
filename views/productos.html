@@ -60,22 +60,24 @@
         </div>
 
         <div class="sesionB">
-                <div>
+                <div class="btnInfo">
                     <input type="text" placeholder="Buscar producto" class="buttonSearch">                
                     <img src="../img/search.svg" class="imgS">
-
                     <img class="imgCon" src="../img/carr.png">
                     <h3 class="contador">{{productos.counts}}</h3>
-                    
-                    <img src="../img/user.png" alt="">
-                    <p class="usernamee">{{productos.username}}</p>                
-                    
-                </div>    
-            <form v-on:submit="btnCerrarSesion">
-                <input type="submit" value="Cerrar Sesion" class="btnC" >                
-            </form>            
+                </div>
 
-        </div>
+                <div class="btnUser">           
+                    <div class="btnUser2">
+                        <img src="../img/user.png" alt="">
+                        <p class="usernamee">{{productos.username}}</p>              
+                    </div>
+                    <form v-on:submit="btnCerrarSesion">
+                        <input type="submit" value="Cerrar Sesion" class="btnC" >                
+                    </form>   
+                </div>                    
+        </div>    
+          
 
         <div class="cartas">
             <div class="card" style="width: 20%;" v-for ="(dato) in productos.datos">

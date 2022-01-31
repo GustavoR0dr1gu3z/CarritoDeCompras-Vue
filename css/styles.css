@@ -65,18 +65,54 @@ html, body{
 }
 
 .sesionB{
+    display: flex;
+    justify-content: space-between;    
     border-radius: 10px;
     background-color: #eee;    
     box-shadow: 1px 1px 3px rgb(42, 47, 48);
-    padding-right: 1rem;    
+    padding-left: 1rem;    
+
+}
+.btnInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;     
 }
 
-.sesionB > form > div{    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-        
+.btnUser{
+    margin-right: 1rem;
 }
+
+.btnUser2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1.5rem 0.5rem 1rem;
+}
+
+.btnUser2 > p{
+    padding-top: 1rem;    
+    margin-right: 5rem;
+    
+}
+
+
+.btnUser2 > img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    
+}
+
+.btnInfo > img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+
+
 
 .usernamee{
     margin-left: 1rem;
@@ -88,9 +124,9 @@ html, body{
     font-family: monospace bold;        
     color: white;
     background-color: black;
-    padding: .3rem;
-    margin-bottom: 0.5rem;
-    margin-left: 78.5rem;
+    padding: .3rem;    
+    margin-bottom: 1rem;
+    margin-left: 2rem;
 }
 
 .dire{
@@ -116,31 +152,21 @@ html, body{
 }
 
 .buttonSearch{    
-    width: 50%;
-    height: 1.5rem;
     border-radius: 5px;
     border: 1px solid gray;    
     font-size: .8rem;
     font-family: monospace;
     margin-left: 1rem;
-    margin-top: 1.3rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding: .3rem;
+    padding-right: 20rem;
 }
 
-.imgS{
-    margin-right: 3rem;
-    width: 2%;
-    height: 2%;
-    margin-top: 1.3rem;    
-}
-
-.imgCon{
-    width: 2%;
-    margin-top: 1.3rem;
-}
 
 .contador{    
     padding: 0;
-    margin-right: 20rem;
+    margin-right: 2rem;
     margin-top: 1.3rem;
     margin-bottom: 0;
 }
