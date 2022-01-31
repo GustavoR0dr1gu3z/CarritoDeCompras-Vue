@@ -302,21 +302,6 @@ html, body{
     padding: 1rem;
 }
 
-.enlaces > ul > li > a{
-    text-decoration: none;
-    color: white;
-}
-
-.enlaces > ul > li:hover{
-    background-color: #eee;
-    color: black;
-    cursor: pointer;
-}
-
-.enlaces > ul > li:hover > a{
-    color: black;
-}
-
 .seleccionar{
     display: flex;
     justify-content: space-around;
@@ -327,8 +312,33 @@ html, body{
 
 .enlacesCrud{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;    
+}
+
+.enlacesCrud > ul > li{
+    list-style: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;        
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(42, 47, 48);
+    padding: 1rem;
+}
+
+.enlaces > ul > li > a, .enlacesCrud > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.enlaces > ul > li:hover, .enlacesCrud > ul > li:hover{
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+}
+
+.enlaces > ul > li:hover > a, .enlacesCrud > ul > li:hover > a{
+    color: black;
 }
