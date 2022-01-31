@@ -41,7 +41,11 @@ const app = Vue.createApp({
 
                 us = localStorage.getItem('usuario');
 
-                if( us === this.inputName){
+                if(us === "admin" ){
+                    window.location.href = "./views/crud_users.html";
+                    console.log("Bienvenido Jefe")
+                }
+                else if( us === this.inputName){
                     window.location.href = "../views/productos.html";
                     console.log("Iniciando Sesion")
                 }else{

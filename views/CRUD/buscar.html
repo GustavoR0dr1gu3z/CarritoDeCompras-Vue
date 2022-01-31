@@ -59,9 +59,15 @@
             <a class="navbar-brand" href="../crud_users.html">
             <img src="https://www.power-street.com/wp-content/uploads/2020/04/LOGO.png" class="d-inline-block align-top" alt="logo_poweStreet">        
             </a>
-            <h2>
-                CRUD DE USUARIOS
-            </h2>
+            <div class="btnUser">           
+                <div class="btnUser2">
+                    <img src="../../img/user.png" alt="logo_user">
+                    <p class="usernamee">{{productos.username}}</p>              
+                </div>
+                <form v-on:submit="btnCerrarSesion">
+                    <input type="submit" value="Cerrar Sesion" class="btnC" >                                                  
+                </form>   
+            </div>        
         </nav>
 
     </div>
