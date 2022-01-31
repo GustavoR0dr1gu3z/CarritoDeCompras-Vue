@@ -321,6 +321,14 @@ html, body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 1.3rem;
+    margin-top: 4rem;
     margin-bottom: 1.3rem;
+}
+
+.enlacesCrud{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;    
 }

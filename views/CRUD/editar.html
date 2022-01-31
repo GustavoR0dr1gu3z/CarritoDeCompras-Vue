@@ -21,19 +21,19 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">    
 
 <!--TITULO-->
-<title>BUSCAR USUARIO</title>
+<title>EDITAR USUARIO</title>
 <!--ICONOS-->
-<link rel="shortcut icon" href="../img/icono16px.png" type="image/png">
-<link rel="apple-touch-icon" href="../img/icono16px.png">
+<link rel="shortcut icon" href="../../img/icono16px.png" type="image/png">
+<link rel="apple-touch-icon" href="../../img/icono16px.png">
 
 <!--Imagen en centro cuando inicie el PWA-->
-<link rel="apple-touch-startup-image" href="../img/icono16px.png">    
+<link rel="apple-touch-startup-image" href="../../img/icono16px.png">    
 
 <!--MANIFEST-->
-<link rel="manifest" href="../manifest.json">
+<link rel="manifest" href="../../manifest.json">
 
 <!--CSS-->
-<link rel="stylesheet" href="../css/styles.css">
+<link rel="stylesheet" href="../../css/styles.css">
 
 <!--VUE CDN-->
 <script src="https://unpkg.com/vue@next"></script>
@@ -50,22 +50,37 @@
 <body>
     
 
-
     <div id="app">
 
-        <div>
+
+
+        <div id="app">
+
+
+            <div class="encabezado">
+                <nav class="navbar navbar-light bg-light">
+                    <a class="navbar-brand" href="../crud_users.html">
+                    <img src="https://www.power-street.com/wp-content/uploads/2020/04/LOGO.png" class="d-inline-block align-top" alt="logo_poweStreet">        
+                    </a>
+                    <h2>
+                        CRUD DE USUARIOS
+                    </h2>
+                </nav>
+        
+            </div>
+        
+        
+                <div class="enlacesCrud">    
+                    <ul>
+                        <li><a href="../crud_users.html">INICIO</a></li>
+                    </ul>    
+                </div>
+            
+            </div>
+        
+    <script src="../../js/main.js"></script>
+    <script src="../../js/mount.js"></script> 
     
-            <ul>
-                <li><a href="../crud_users.html">INICIO</a></li>
-            </ul>    
-        </div>
-    
-    </div>
-
-
-<script src="../js/main.js"></script>
-<script src="../js/mount.js"></script> 
-
 
 </body>
 </html>
