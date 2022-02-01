@@ -160,7 +160,8 @@ const app = Vue.createApp({
             for(i=0; i<datosB.length; i++){
                 this.buscar.datosB.push(datosB[i]);
             }
-            console.log(datosB);
+            console.log(datosB);            
+
         }
 
     },
