@@ -146,11 +146,6 @@ const app = Vue.createApp({
 
             console.log(resultadoBuscar);
 
-            datosB = resultadoBuscar.data.datos
-            for(i=0; i<datosB.length; i++){
-                this.buscar.datosB.push(datosB[i]);
-            }
-            console.log(datosB);
 
             if(resultadoBuscar.data.exito == true){
                 console.log(resultadoBuscar.data.exito);
@@ -161,6 +156,11 @@ const app = Vue.createApp({
                 alert("Usuario No Encontrado, Revisar Datos");
             }
 
+            datosB = resultadoBuscar.data.datos
+            for(i=0; i<datosB.length; i++){
+                this.buscar.datosB.push(datosB[i]);
+            }
+            console.log(datosB);
         }
 
     },
