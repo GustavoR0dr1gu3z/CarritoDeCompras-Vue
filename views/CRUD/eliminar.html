@@ -80,6 +80,14 @@
                         <li><a href="../crud_users.html">INICIO</a></li>
                     </ul>    
                 </div>
+
+                <div class="crudBus">
+                    <form v-on:submit="btnEliminarUser">
+                        <input v-model="usuarioD" required type="text" name="userN" id="userN" placeholder="Nombre de Usuario">
+                        
+                        <input type="submit" value="Eliminar" class="btnB">
+                    </form>
+        
             
             </div>
         

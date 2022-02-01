@@ -43,6 +43,10 @@ const app = Vue.createApp({
                 passE: "",
                 telE: "",
                 emailE: "",
+            },
+
+            eliminar:{
+                usuarioD: "",
             }
 
 
@@ -196,6 +200,23 @@ const app = Vue.createApp({
                 alert("Usuario No Editado, Revisar Datos");
             }
 
+        },
+
+        async btnEliminarUser(e){
+            e.preventDefault();
+            let resultadoEliminar = await axios.post("http://prueba.pwstasp.net/api/conexion_login/eliminar_usuario", {
+            usuario: this.usuarioD,
+        });
+
+        console.log(resultadoEliminar);
+
+            if(resultadoEliminar.data.exito == true){
+                console.log(resultadoEliminar.data.exito);
+                alert("Usuario Eliminado");
+            }else{
+                console.log(resultadoEliminar.data.error);
+                alert("Usuario No Eliminado, Revisar Datos");
+            }
         }
 
     },
