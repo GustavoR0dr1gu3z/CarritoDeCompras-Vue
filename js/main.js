@@ -19,6 +19,15 @@ const app = Vue.createApp({
                 datos: [],
                 counts: 0,
             },
+
+            buscar:{
+                dateB: "",
+                nameB: "",
+                userB: "",
+                passB: "",
+                telB: "",
+                emailB: "",
+            }
             
         };
     },
@@ -81,7 +90,6 @@ const app = Vue.createApp({
             console.log(datos);            
         },
 
-
         modCount(instruccion = "add", limit = 10){
             if(instruccion == "dis" && this.productos.counts > 0){
                 this.productos.counts -= 1;
@@ -93,6 +101,38 @@ const app = Vue.createApp({
             }
 
         },
+
+        async btnGuardarUser(e){
+            e.preventDefault();
+            let resultadoBuscar = await axios.post("http://prueba.pwstasp.net/api/conexion_login/guardar_usuario", {
+            fecha: this.dateB,
+            nombre: this.nameB,
+            usuario: this.userB,
+            contrasenia: this.passB,
+            telefono: this.telB,
+            email: this.emailB,
+        });
+
+        console.log(this.dateB);
+        console.log(this.nameB);
+        console.log(this.userB);
+        console.log(this.passB);
+        console.log(this.telB);
+        console.log(this.emailB);
+
+
+        console.log(resultadoBuscar);
+
+            if(resultadoBuscar.data.exito == true){                
+                console.log(resultadoBuscar.data.exito);            
+                alert("Usuario Guardado");    
+            }
+            else{
+                console.log(resultadoBuscar.data.error);            
+                alert("Usuario No Guardado, Revisar Datos");
+            }
+
+        }
 
     },
 
