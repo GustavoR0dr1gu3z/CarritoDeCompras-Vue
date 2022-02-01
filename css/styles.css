@@ -58,11 +58,7 @@ html, body{
 }
 
 
-.app > form > .inputbtn:hover, .btnC:hover, .quitarP:hover{
-    background-color: #eee;
-    color: black;
-    cursor: pointer;
-}
+
 
 .sesionB{
     display: flex;
@@ -335,12 +331,12 @@ html, body{
 }
 
 
-.guardar{
+.crud, .crudBus{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.guardar > form{
+.crud > form{
     width: 30%;
     display: flex;
     justify-content: space-around;
@@ -352,10 +348,33 @@ html, body{
     padding-top: 1rem;
 }
 
-.guardar > form > input{
+.crud > form > input, .crudBus > form > input{
     margin-bottom: 1rem;
 }
 
+.crudBus > form {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;    
+    align-items: center;
+    margin-bottom: 1.3rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(42, 47, 48);
+    padding-top: 1rem;
+}
+
+.app > form > .inputbtn:hover, .btnC:hover, .quitarP:hover, .btnG:hover{
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+}
+
+.btnG:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 
 .enlaces > ul > li:hover, .enlacesCrud > ul > li:hover{
     background-color: #eee;

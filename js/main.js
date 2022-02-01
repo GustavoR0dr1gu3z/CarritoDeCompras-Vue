@@ -20,14 +20,23 @@ const app = Vue.createApp({
                 counts: 0,
             },
 
+            guardar:{
+                dateG: "",
+                nameG: "",
+                userG: "",
+                passG: "",
+                telG: "",
+                emailG: "",
+            },
+
             buscar:{
-                dateB: "",
-                nameB: "",
-                userB: "",
-                passB: "",
-                telB: "",
-                emailB: "",
-            }
+                busquedaB: "",
+                limiteB: "",
+                paginaB: "",
+                datosB : [],
+            },
+
+
             
         };
     },
@@ -104,32 +113,52 @@ const app = Vue.createApp({
 
         async btnGuardarUser(e){
             e.preventDefault();
-            let resultadoBuscar = await axios.post("http://prueba.pwstasp.net/api/conexion_login/guardar_usuario", {
-            fecha: this.dateB,
-            nombre: this.nameB,
-            usuario: this.userB,
-            contrasenia: this.passB,
-            telefono: this.telB,
-            email: this.emailB,
+            let resultadoGuardar = await axios.post("http://prueba.pwstasp.net/api/conexion_login/guardar_usuario", {
+            fecha: this.dateG,
+            nombre: this.nameG,
+            usuario: this.userG,
+            contrasenia: this.passG,
+            telefono: this.telG,
+            email: this.emailG,
         });
 
-        console.log(this.dateB);
-        console.log(this.nameB);
-        console.log(this.userB);
-        console.log(this.passB);
-        console.log(this.telB);
-        console.log(this.emailB);
 
+        console.log(resultadoGuardar);
 
-        console.log(resultadoBuscar);
-
-            if(resultadoBuscar.data.exito == true){                
-                console.log(resultadoBuscar.data.exito);            
+            if(resultadoGuardar.data.exito == true){                
+                console.log(resultadoGuardar.data.exito);            
                 alert("Usuario Guardado");    
             }
             else{
-                console.log(resultadoBuscar.data.error);            
+                console.log(resultadoGuardar.data.error);            
                 alert("Usuario No Guardado, Revisar Datos");
+            }
+
+        },
+
+        async btnBuscarUser(e){
+            e.preventDefault();
+            let resultadoBuscar = await axios.post(" http://prueba.pwstasp.net/api/conexion_login/buscar_usuario", {
+                busqueda: this.busquedaB,
+                limite: this.limiteB,
+                pagina: this.paginaB,
+            });
+
+            console.log(resultadoBuscar);
+
+            datosB = resultadoBuscar.data.datos
+            for(i=0; i<datosB.length; i++){
+                this.buscar.datosB.push(datosB[i]);
+            }
+            console.log(datosB);
+
+            if(resultadoBuscar.data.exito == true){
+                console.log(resultadoBuscar.data.exito);
+                
+            }
+            else if(resultadoBuscar.data.exito == false){
+                console.log(resultadoBuscar.data.error);
+                alert("Usuario No Encontrado, Revisar Datos");
             }
 
         }

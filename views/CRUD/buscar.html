@@ -78,6 +78,31 @@
                 <li><a href="../crud_users.html">INICIO</a></li>
             </ul>    
         </div>
+
+        <div class="crudBus">
+            <form v-on:submit="btnBuscarUser">
+                <input v-model="busquedaB" required type="text" name="userN" id="userN" placeholder="Nombre de Usuario">
+                <input v-model="limiteB" required type="number" name="numM" id="numM" placeholder="Numero maximo de coincidencias">
+                <input v-model="ṕaginaB" required type="number" name="pag" id="pag" placeholder="Paginas">
+                
+                <input type="submit" value="Guardar" class="btnB">
+            </form>
+
+            <div v-for = " (datoB) in buscar.datosB ">
+                <p>Id: {{datoB._id}}</p>
+                <hr>
+                <p>Nombre: {{datoB.nombre}}</p>
+                <hr>
+                <p>Usuario: {{datoB.usuario}}</p>
+                <hr>
+                <p>Fecha: {{datoB.fecha}}</p>
+                <hr>
+                <p>Telefono: {{datoB.telefono}}</p>
+                <hr>
+                <p>Email: {{datoB.email}}</p>
+            </div>
+
+        </div>
     
     </div>
 
