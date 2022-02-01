@@ -1,7 +1,10 @@
+/* Fondo color eee */
+
 html, body{
     background-color: #eee;
 }
 
+/* Formulario del index */
 .app > form{
     width: 30%;
     height: 30%;
@@ -18,6 +21,7 @@ html, body{
     padding-bottom: 4.5rem;
 }
 
+/* h1 INICIO SESION */
 .app > form >h1{
     text-align: center;
     font-size: 1.4rem;    
@@ -25,6 +29,7 @@ html, body{
     font-family: monospace;    
 }
 
+/* h3 USUARIO CONTRASEÑA */
 .app > form > h3{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
@@ -34,6 +39,7 @@ html, body{
     margin-top: 2rem;
 }
 
+/* imnput del index */
 .app > form > input{
     width: 80%;
     height: 2rem;
@@ -45,6 +51,7 @@ html, body{
     margin-left: 1rem;
 }
 
+/* boton INICIAR */
 .app > form > .inputbtn{
     width: 50%;
     font-size: 1rem;
@@ -57,9 +64,7 @@ html, body{
     padding-top: 6px;
 }
 
-
-
-
+/*Navbar con el carrito, busqueda y boton cerrar sesion*/
 .sesionB{
     display: flex;
     justify-content: space-between;    
@@ -70,6 +75,7 @@ html, body{
 
 }
 
+/*Navbar del archivo de carrito*/
 .sesionB2{
     display: flex;
     justify-content: end;    
@@ -80,6 +86,7 @@ html, body{
 
 }
 
+/*Navbar del archivo de producto*/
 .btnInfo{
     display: flex;
     justify-content: space-between;
@@ -87,10 +94,12 @@ html, body{
     padding-left: 1rem;     
 }
 
+/*Boton del usuario*/
 .btnUser{
     margin-right: 1rem;
 }
 
+/*Boton del usuario cerrar sesion */
 .btnUser2{
     display: flex;
     justify-content: space-between;
@@ -98,13 +107,14 @@ html, body{
     padding: 0.5rem 1.5rem 0.5rem 1rem;
 }
 
+/*nombre del usuario*/
 .btnUser2 > p{
     padding-top: 1rem;    
     margin-right: 5rem;
     
 }
 
-
+/*img del usuario*/
 .btnUser2 > img{
     width: 2rem;
     height: 2rem;
@@ -112,6 +122,7 @@ html, body{
     
 }
 
+/*img usuario*/
 .btnInfo > img{
     width: 2rem;
     height: 2rem;
@@ -119,6 +130,7 @@ html, body{
     margin-left: 0.5rem;
 }
 
+/*img contador*/
 .imgCon{
     cursor: pointer;
     width: 2rem;
@@ -127,10 +139,12 @@ html, body{
     margin-left: 0.5rem;
 }
 
+/*Nombre del usuario*/
 .usernamee{
     margin-left: 1rem;
 }
 
+/*Boton cerrar sesion*/
 .btnC{
     font-size: .7rem;
     border-radius: .2rem;
@@ -142,10 +156,12 @@ html, body{
     margin-left: 2rem;
 }
 
+/*Direccion de home>productos*/
 .dire{
     display: flex;    
 }
 
+/*Estilos a la direccion*/
 .dire > a {
     text-decoration: none;
     color: black;
@@ -156,6 +172,7 @@ html, body{
     margin-top: 0.1rem;
 }
 
+/*Estilos a la direccion*/
 .dire > p{
     font-size: .8rem;
     font-family: monospace;
@@ -164,6 +181,7 @@ html, body{
     margin-top: 0.1rem;
 }
 
+/*Button del buscador*/
 .buttonSearch{    
     border-radius: 5px;
     border: 1px solid gray;    
@@ -176,7 +194,7 @@ html, body{
     padding-right: 20rem;
 }
 
-
+/*Contador*/
 .contador{    
     padding: 0;
     margin-right: 2rem;
@@ -184,6 +202,7 @@ html, body{
     margin-bottom: 0;
 }
 
+/*Cartas*/
 .cartas{
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +212,7 @@ html, body{
 
 }
 
+/*cartas*/
 .card{
     margin: 0.01rem;
     margin: 2rem;
@@ -200,8 +220,8 @@ html, body{
     box-shadow: 2px 2px 20px rgb(142, 174, 180);
 }
 
+/*texto de las cartas*/
 .card-text{
-
     text-align: center;
     width: 10rem;
     white-space: nowrap;
@@ -209,8 +229,8 @@ html, body{
     overflow: hidden;
 }
 
-.buttonAQ{
-    
+/*Button de quitar y agregar*/
+.buttonAQ{    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -219,6 +239,7 @@ html, body{
     
 }
 
+/*Precios*/
 .precios{
     display: flex;
     justify-content: space-around;
@@ -227,11 +248,13 @@ html, body{
     margin-bottom: 1.3rem;
 }
 
+/*Altura de la imagen en top*/
 .card-img-top{
     width: 10rem;
     height: 10rem;
 }
 
+/*Info en las cartas*/
 .infoP{
     font-family: monospace;
     font-size: .75rem;    
@@ -239,6 +262,7 @@ html, body{
     align-items: left;
 }
 
+/*Producto de las cartas*/
 .productosP{
     box-shadow: 1px 1px 3px rgb(42, 47, 48);
     border-radius: 5px;
@@ -249,6 +273,7 @@ html, body{
     margin-right: 60rem;
 }
 
+/*img del producto*/
 .fotoProducto{
     width: 10rem;
     height: 10rem;
@@ -257,16 +282,19 @@ html, body{
     
 }
 
+/*Contador del producto*/
 .productCount{
     display: flex;
     justify-content: space-around;
     align-items: center;    
 }
 
+/*contador*/
 .productCount > h3{
     padding: 0.2rem;
 }
 
+/*boton quitar*/
 .btnQuitarP{
     display: flex;
     justify-content: space-around;
@@ -274,18 +302,20 @@ html, body{
     margin: 1.3rem;
 }
 
+/*boton quitar*/
 .btnQuitarP > button{
     color: white;
     background-color: black;
 }
 
-
+/*enlaces del crud*/
 .enlaces{
     display: flex;
     justify-content: space-around;
     align-items: center;    
 }
 
+/*lista de usuarios crud*/
 .enlaces > ul > li{
     list-style: none;
     margin-left: 1rem;
@@ -298,6 +328,7 @@ html, body{
     padding: 1rem;
 }
 
+/*Seleccionar algo del crud*/
 .seleccionar{
     display: flex;
     justify-content: space-around;
@@ -306,12 +337,14 @@ html, body{
     margin-bottom: 1.3rem;
 }
 
+/*enlaces al crud*/
 .enlacesCrud{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/*listas del crud*/
 .enlacesCrud > ul > li{
     list-style: none;
     margin-left: 1rem;
@@ -323,19 +356,20 @@ html, body{
     padding: 1rem;
 }
 
-
-
+/*anclas del crud*/
 .enlaces > ul > li > a, .enlacesCrud > ul > li > a{
     text-decoration: none;
     color: white;
 }
 
-
+/*buscar del crud*/
 .crud, .crudBus{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
+/*formulario del crud*/
 .crud > form{
     width: 30%;
     display: flex;
@@ -348,10 +382,12 @@ html, body{
     padding-top: 1rem;
 }
 
+/*input del crud*/
 .crud > form > input, .crudBus > form > input{
     margin-bottom: 1rem;
 }
 
+/*formulario crud buscar*/
 .crudBus > form {
     width: 30%;
     display: flex;
@@ -364,6 +400,7 @@ html, body{
     padding-top: 1rem;
 }
 
+/*cuando el cursor pasa encima del elemento, cambia de color*/
 .app > form > .inputbtn:hover, .btnC:hover, .quitarP:hover, .btnG:hover, .btnB:hover{
     background-color: #eee;
     color: black;
