@@ -53,7 +53,7 @@
 
     <div id="app">
 
-
+<!-- Encabezado con logo de power street y datos del admin -->
     <div class="encabezado">
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="../crud_users.html">
@@ -72,13 +72,14 @@
 
     </div>
 
-
+<!-- Enlace directo al INICIO -->    
         <div class="enlacesCrud">    
             <ul>
                 <li><a href="../crud_users.html">INICIO</a></li>
             </ul>    
         </div>
 
+<!-- formulario para la busqueda de usuarios -->
         <div class="crudBus">
             <form v-on:submit="btnBuscarUser">
                 <input v-model="busquedaB" required type="text" name="userN" id="userN" placeholder="Nombre de Usuario">
@@ -88,6 +89,7 @@
                 <input type="submit" value="Guardar" class="btnB">
             </form>
 
+<!-- v-for para imprimir los datos del usuario -->
             <div v-for = " (datoB) in buscar.datosB ">
                 <p>Id: {{datoB._id}}</p>
                 <hr>

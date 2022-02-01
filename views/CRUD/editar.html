@@ -51,6 +51,7 @@
     
     <div id="app">
 
+    <!-- Encabezado con logo de power street y datos del admin -->
 
             <div class="encabezado">
                 <nav class="navbar navbar-light bg-light">
@@ -70,14 +71,14 @@
         
             </div>
         
-        
+<!-- Enlace directo al INICIO -->            
                 <div class="enlacesCrud">    
                     <ul>
                         <li><a href="../crud_users.html">INICIO</a></li>
                     </ul>    
                 </div>
 
-
+<!-- formulario para la edicion de los usuarios -->
                 <div class="crud">
                     <form v-on:submit="btnEditarUser">
                         <input v-model="dateE" required type="text" name="fechaE" id="fechaE" placeholder="dia/mes/año">

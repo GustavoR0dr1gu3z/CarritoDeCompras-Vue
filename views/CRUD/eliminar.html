@@ -55,7 +55,7 @@
 
         <div id="app">
 
-
+<!-- Encabezado con logo de power street y datos del admin -->
             <div class="encabezado">
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="../crud_users.html">
@@ -74,13 +74,14 @@
         
             </div>
         
-        
+<!-- Enlace directo al INICIO -->            
                 <div class="enlacesCrud">    
                     <ul>
                         <li><a href="../crud_users.html">INICIO</a></li>
                     </ul>    
                 </div>
 
+<!-- Formulario para eliminar el usuario  -->
                 <div class="crudBus">
                     <form v-on:submit="btnEliminarUser">
                         <input v-model="usuarioD" required type="text" name="userN" id="userN" placeholder="Nombre de Usuario">

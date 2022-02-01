@@ -53,7 +53,7 @@
 
     <div id="app">
 
-
+<!-- Encabezado con logo de power street y datos del admin -->
         <div class="encabezado">
             <nav class="navbar navbar-light bg-light">
                 <a class="navbar-brand" href="../crud_users.html">
@@ -74,13 +74,13 @@
     
         </div>
     
-    
+<!-- Enlace directo al INICIO -->    
             <div class="enlacesCrud">    
                 <ul>
                     <li><a href="../crud_users.html">INICIO</a></li>
                 </ul>    
             </div>
-
+<!-- formulario con los imput v-model para los datos enviarselos al mainjs y hacer el consumo de API -->
             <div class="crud">
                 <form v-on:submit="btnGuardarUser">
                     <input v-model="dateG" required type="text" name="fecha" id="fecha" placeholder="dia/mes/año">
