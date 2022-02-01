@@ -364,13 +364,13 @@ html, body{
     padding-top: 1rem;
 }
 
-.app > form > .inputbtn:hover, .btnC:hover, .quitarP:hover, .btnG:hover{
+.app > form > .inputbtn:hover, .btnC:hover, .quitarP:hover, .btnG:hover, .btnB:hover{
     background-color: #eee;
     color: black;
     cursor: pointer;
 }
 
-.btnG:hover{
+.btnG:hover, .btnB:hover{
     background-color: black;
     color: white;
     cursor: pointer;
