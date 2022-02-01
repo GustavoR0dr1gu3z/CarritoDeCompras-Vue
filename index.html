@@ -50,35 +50,31 @@
     
     <div id ="app" class="app">
         
+        <!-- metodo on click al metodo btnIniciarSesion2 -->
         <form v-on:submit="btnIniciarSesion2">
 
-            <h1>{{loggin.mensaje}}</h1>
+            <!-- Se muestra el mensaje que escribimos en main.js -->
+            <h1>{{loggin.mensaje}}</h1>            
 
             <h3>{{loggin.usuarioo}}</h3>
 
+            <!-- Se ocuba v-bind para el dato del input que se escribirá -->
             <input v-model="inputName" type="text" placeholder="Ingrese el usuario" required>
 
             <h3>{{loggin.contrasena}}</h3>
 
             <input v-model="inputPass" type="password" placeholder="Ingrese contraseña" required>
             
+            <!-- Button para que acceda al metodo ya dicho -->
             <input type="submit" value="Iniciar" class="inputbtn">
             
         </form>
-<!-- COMO LA ETIQUETA A, PARA LOS ENLACES-->
+
 
     </div>
-    
-    <script>
-        var user = localStorage.getItem('usuario');
-        if( user ){
-            console.log("Ya hay un usuario existente");
-        }else{
-            console.log("No hay usuario");
-        }
-    </script>
 
-    
+    <!-- Se ocupan los archivos js para el funcionamiento -->
+    <script src="localStorageFull.js"></script>    
     <script src="./load.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/mount.js"></script>
