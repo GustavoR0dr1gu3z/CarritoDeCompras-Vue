@@ -49,12 +49,7 @@
 </head>
 <body>
     
-
     <div id="app">
-
-
-
-        <div id="app">
 
 
             <div class="encabezado">
@@ -81,9 +76,24 @@
                         <li><a href="../crud_users.html">INICIO</a></li>
                     </ul>    
                 </div>
-            
-            </div>
-        
+
+
+                <div class="crud">
+                    <form v-on:submit="btnEditarUser">
+                        <input v-model="dateE" required type="text" name="fechaE" id="fechaE" placeholder="dia/mes/año">
+                        <input v-model="nameE" required type="text" name="nameE" id="nameE" placeholder="Nombre">
+                        <input v-model="userE" required type="text" name="userE" id="userE" placeholder="Nombre de Usuario">
+                        <input v-model="passE" required type="password" name="passE" id="passE" placeholder="*******">
+                        <input v-model="telE" required type="text" name="telE" id="telE" placeholder="1234567890">
+                        <input v-model="emailE" required type="text" name="emailE" id="emailE" placeholder="alguien@sitio.com">                
+    
+                        <input type="submit" value="Editar" class="btnG">
+                    </form>
+                </div>
+    
+
+
+    </div>  
     <script src="../../js/main.js"></script>
     <script src="../../js/mount.js"></script> 
     

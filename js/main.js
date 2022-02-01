@@ -36,6 +36,15 @@ const app = Vue.createApp({
                 datosB : [],
             },
 
+            editar:{
+                dateE: "",
+                nameE: "",
+                userE: "",
+                passE: "",
+                telE: "",
+                emailE: "",
+            }
+
 
             
         };
@@ -161,6 +170,31 @@ const app = Vue.createApp({
                 this.buscar.datosB.push(datosB[i]);
             }
             console.log(datosB);            
+
+        },
+
+        async btnEditarUser(e){
+            e.preventDefault();
+            let resultadoEditar = await axios.post("http://prueba.pwstasp.net/api/conexion_login/editar_usuario", {
+            fecha: this.dateE,
+            nombre: this.nameE,
+            usuario: this.userE,
+            contrasenia: this.passE,
+            telefono: this.telE,
+            email: this.emailE,
+        });
+
+
+        console.log(resultadoEditar);
+
+            if(resultadoEditar.data.exito == true){                
+                console.log(resultadoEditar.data.exito);            
+                alert("Usuario Editado");    
+            }
+            else{
+                console.log(resultadoEditar.data.error);            
+                alert("Usuario No Editado, Revisar Datos");
+            }
 
         }
 
