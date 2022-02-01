@@ -108,7 +108,7 @@ const app = Vue.createApp({
             /*Si no hay ningun dato*/            
             if( us == null){
                 /* Se regresa al index para que se loggen */
-                window.location.href = "../index.html";
+                window.location.href = "/index.html";
                 console.log("Cerrando Sesion")
             }else{
                 /* Solo imprime quien esta logeado en la consola */
