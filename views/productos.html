@@ -53,12 +53,14 @@
     
     <div id="app">
 
+        <!-- Direccion de archivos en la esquina superior izquierda -->
         <div class="dire">
             <a href="../index.html">Home</a>
             <p>{{productos.signo}}</p>
             <a href="productos.html">Productos</a>
         </div>
 
+        <!-- Contenedor del input para los productos -->
         <div class="sesionB">
                 <div class="btnInfo">
                     <input type="text" placeholder="Buscar producto" class="buttonSearch">                
@@ -80,7 +82,9 @@
                 </div>                       
         </div>              
 
+        <!-- Contenedor para las cartas -->
         <div class="cartas">
+            <!-- Uso de v-bind del ciclo for para acceder a todos los elementos del API ya extraidos y colocarlos en una carta -->
             <div class="card" style="width: 20%;" v-for ="(dato) in productos.datos">
                 <!--<img class="card-img-top" v-bind:src={{dato.imagen}} alt="Card image cap">-->
                 <img class="card-img-top" src="../img/icono256px.png" alt="Card image cap">
